@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto17
+      
+  build:
+    commands:
+      - echo "Building the Spring Boot application..."
+      - echo Building the Spring Boot application...
+      - mvn clean install
+  post_build:
+    commands:
+      - echo Build completed
+      
+artifacts:
+  files:
+    - target/lab5.jar
+    - scripts/*.sh
+    - appspec.yml
+  discard-paths: yes
