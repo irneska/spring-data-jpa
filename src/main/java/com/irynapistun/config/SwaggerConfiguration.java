@@ -15,7 +15,7 @@ public class SwaggerConfiguration {
     private static final String SWAGGER_API_VERSION = "1.0";
     private static final String LICENSE_TEXT = "License";
     private static final String title = "Spring Boot Start by Iryna Pistun";
-    private static final String description = "Documentation for the project";
+    private static final String description = "I love cats";
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
